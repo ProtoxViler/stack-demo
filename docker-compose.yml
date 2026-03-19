@@ -1,0 +1,11 @@
+services:
+  apache:
+    container_name: MonSiteApache
+    image: httpd
+    ports:
+      - 80:80
+    volumes:
+      - MonSiteApache_data:/var/www
+
+volumes:
+  MonSiteApache_data:
